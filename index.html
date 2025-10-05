@@ -1,1 +1,35 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Truth or Dare Game</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Truth or Dare</h1>
+        <p class="subtitle">Pilih Truth atau Dare untuk mulai!</p>
+        
+        <div class="choice-buttons">
+            <button class="btn btn-truth" onclick="generateTruth()">
+                <i class="fas fa-question-circle"></i> Truth
+            </button>
+            <button class="btn btn-dare" onclick="generateDare()">
+                <i class="fas fa-fire"></i> Dare
+            </button>
+        </div>
+
+        <div class="spinner" id="spinner"></div>
+
+        <div class="result" id="result">
+        </div>
+    </div>
+  <script src="app.js"></script>
+</body>
+
+
+
